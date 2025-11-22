@@ -66,9 +66,9 @@ jobs:
           platforms: linux/amd64, linux/arm64
           push: true
           tags: |
-            sunch4se/derper:${{ env.TAILSCALE_VERSION }}
-            sunch4se/derper:latest
-            sunch4se/derper:${{ github.sha }}
+            # sunch4se/derper:${{ env.TAILSCALE_VERSION }}
+            # sunch4se/derper:latest
+            # sunch4se/derper:${{ github.sha }}
             ghcr.io/${{ github.actor }}/derper:${{ env.TAILSCALE_VERSION }}
             ghcr.io/${{ github.actor }}/derper:latest
           build-args: |
